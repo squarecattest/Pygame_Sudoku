@@ -31,7 +31,7 @@ class Sound:
     enter = pygame.mixer.Sound(".\\sound\\enter.mp3")
     finish = pygame.mixer.Sound(".\\sound\\finish.mp3")
     forbidden = pygame.mixer.Sound(".\\sound\\forbidden.mp3")
-    turn_page = pygame.mixer.Sound(".\\sound\\turn_page_2.mp3")
+    turn_page = pygame.mixer.Sound(".\\sound\\turn_page.mp3")
 
     def set_volumn_BGM(self, volumn: int):
         pygame.mixer.music.set_volume(0.5 * volumn / 100)
