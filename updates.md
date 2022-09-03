@@ -8,7 +8,7 @@ New hint mode: The hint will now appear in the following order:
 3. If the puzzle is correct so far, the hint will point out one of the trivial solutions in blue color.
 4. If there is no wrong inputs nor trivial solutions, the hint will not appear.
 
-Difficulty change: "Normal" mode and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
+Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
 
 ### Code
 New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be place at the scale of screen) and ```rel```(shift from some place of screen).
