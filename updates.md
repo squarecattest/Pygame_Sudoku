@@ -10,7 +10,11 @@ New hint mode: The hint will now appear in the following order:
 
 Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
 
+Add counter "moves" to count the total moves, including entering numbers, deleting numbers, undos and clears.
+
 ### Code
 New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be place at the scale of screen) and ```rel```(shift from some place of screen).
 
 Replace class ```Interactable``` with ```Objects```, adding functions to show on screen and act on the input.
+
+Add class ```Saves``` under ```HomePage```, saving temporary game saves.
