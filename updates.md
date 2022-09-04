@@ -12,7 +12,7 @@ New hint mode: The hint will now appear in the following order:
 
 Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
 
-Add counter "moves" to count the total moves (including entering numbers, deleting numbers, undos and clears) and counter "used hints" to count the hints used (only count when hints pop up). "moves" counter can be seen in-game and at record screen, while "used hints" counter cannot.
+Add counter "moves" to count the total moves (including entering numbers, undos and clears) and counter "used hints" to count the hints used (only count when hints pop up). "moves" counter can be seen in-game and at record screen, while "used hints" counter cannot.
 
 ### Code
 New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be place at the scale of screen) and ```rel```(shift from some place of screen).
