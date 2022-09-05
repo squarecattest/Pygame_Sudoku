@@ -17,8 +17,10 @@ Add counter "moves" to count the total moves (including entering numbers, undos 
 Add end-game screen, showing game time, total moves, total hint times and percentage of correct moves.
 
 ### Code
-New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be place at the scale of screen) and ```rel```(shift from some place of screen).
+New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be placed at the scale of screen) and ```rel```(shift from some place of screen).
 
 Replace class ```Interactable``` with ```Objects```, adding functions to show on screen and act on the input.
 
 Add class ```Saves``` under ```HomePage```, saving temporary game saves.
+
+Module ```objects``` now also handles ```Color``` (for night mode), ```Settings``` (moved from ```options```), ```Controls``` (added, for more readable code while keeping efficiency). ```Background``` is merged into ```Image```.
