@@ -39,6 +39,7 @@ class Sudoku:
     def next_guess_index(self, i: int, j: int):
         while self.puzzle[i][j]:
             (i, j) = (i, j + 1) if j < 8 else (i + 1, 0)
+            if i == 9: raise Unsolvable
         return i, j
 
     def copy(self):
