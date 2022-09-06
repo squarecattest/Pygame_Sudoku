@@ -3,6 +3,8 @@
 #### Main
  - The window is now scalable.
 
+ - Add night mode.
+
  - Player can now save unfinished games, which can be played after returning to title screen or restarting the game.
 
  - Add end-game screen, showing game time, total moves, total hint times and percentage of correct moves.
@@ -21,12 +23,16 @@
 Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
 
 ### Code
+Lots of trash thrown into module ```objects```. Just thought that every other modules import it so it is easier to call those classes, but it becomes too messy@@
+
  - New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be placed at the scale of screen) and ```rel```(shift from some place of screen).
 
  - Replace class ```Interactable``` with ```Objects```, adding functions to show on screen and act on the input.
 
  - Add class ```Saves``` under ```HomePage```, saving temporary game saves.
 
- - Module ```objects``` now also handles ```Color``` (for night mode), ```Settings``` (moved from ```options```), ```Controls``` (added, for more readable code while keeping efficiency). ```Background``` is merged into ```Image```.
+ - Module ```objects``` now also handles ```Color``` (for night mode), ```Settings``` (moved from ```options```), ```Controls``` (added, for more readable code while keeping efficiency). ```Background``` is merged into ```Image```. Add class ```Snow```, controlling movement of snow.
+
+ - Add class ```Snow``` 
 
  - Add module ```formats``` to store all the formatting functions (cuz they're so damn long).
