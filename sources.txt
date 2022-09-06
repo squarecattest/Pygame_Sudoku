@@ -1,7 +1,8 @@
-background image: https://rare-gallery.com/4584932-8-bit-sky-clouds-pixels-landscape-artwork-pixel-art.html
-background music: SMM2 snow stage(Super Mario Bros. & Super Mario Bros. 3)
-timer: Minecraft Time Stop Mod https://www.curseforge.com/minecraft/mc-mods/the-time-stop-mod
+background image (day): https://rare-gallery.com/4584932-8-bit-sky-clouds-pixels-landscape-artwork-pixel-art.html
+background image (night): https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ccf4ad8ac3d50e0.png
+background music: SMM2 snow stage(Super Mario Bros. & Super Mario Bros. 3) + night version
+timer texture: Minecraft Time Stop Mod https://www.curseforge.com/minecraft/mc-mods/the-time-stop-mod
 Sounds
-enter, forbidden, finish: Super Mario Bros. 3
+enter, back, forbidden, finish: Super Mario Bros. 3
 turn_page: Minecraft writable_book
 All other textures from Minecraft.
