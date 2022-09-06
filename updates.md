@@ -1,8 +1,16 @@
 ## v1.1
 ### Game
+#### Main
 The window is now scalable.
 
 Player can now save unfinished games, which can be played after returning to title screen or restarting the game.
+
+Add end-game screen, showing game time, total moves, total hint times and percentage of correct moves.
+
+#### Other
+Now you can select on fixed blocks (designed to make arrow keys easier to use).
+
+Add counter "moves" to count the total moves (including entering numbers and undos) and "used hints" to count the hint times (only count when hints pop up). "moves" counter can be seen in-game and at record screen, while "used hints" counter cannot.
 
 New hint mode: The hint will now appear in the following order:
 1. If the puzzle has repeated numbers(red ones), the hint will point out all of them in red color.
@@ -11,10 +19,6 @@ New hint mode: The hint will now appear in the following order:
 4. If there is no wrong inputs nor trivial solutions, the hint will not appear.
 
 Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -> 40-45, 46-51)
-
-Add counter "moves" to count the total moves (including entering numbers, undos and clears) and counter "used hints" to count the hint times (only count when hints pop up). "moves" counter can be seen in-game and at record screen, while "used hints" counter cannot.
-
-Add end-game screen, showing game time, total moves, total hint times and percentage of correct moves.
 
 ### Code
 New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be placed at the scale of screen) and ```rel```(shift from some place of screen).
