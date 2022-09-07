@@ -5,13 +5,11 @@ from formats import settings_format
 from random import random, randrange
 pygame.init()
 
-
 class Screen:
     @classmethod
     def set(cls, screen: pygame.Surface):
         cls.screen = screen
         cls.size = screen.get_size()
-
 
 class Color:
     title_day = (0, 0, 0)
@@ -61,14 +59,11 @@ class Color:
             cls.num_repeated = cls.num_repeated_day
             cls.same_num = cls.same_num_day
 
-
 class Font:
     title = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 84)
     ingame_option_title = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 64)
     bar = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 16)
-    subtitle = number = pygame.font.Font(
-        ".\\font\\Minecraftia-Regular.ttf", 24)
-
+    subtitle = number = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 24)
 
 class Image:
     background_day = pygame.image.load(".\\image\\background_day.png")
@@ -82,19 +77,13 @@ class Image:
         else:
             cls.background = Objects(cls.background_day, "rel_bottom", (0, 0))
 
-
 class Texture:
-    difficulty_left_arrow = pygame.image.load(
-        ".\\texture\\difficulty_left_arrow.png")
-    difficulty_right_arrow = pygame.image.load(
-        ".\\texture\\difficulty_right_arrow.png")
-    record_left_arrow_unavailable = pygame.image.load(
-        ".\\texture\\record_left_arrow_unavailable.png")
-    record_right_arrow_unavailable = pygame.image.load(
-        ".\\texture\\record_right_arrow_unavailable.png")
+    difficulty_left_arrow = pygame.image.load(".\\texture\\difficulty_left_arrow.png")
+    difficulty_right_arrow = pygame.image.load(".\\texture\\difficulty_right_arrow.png")
+    record_left_arrow_unavailable = pygame.image.load(".\\texture\\record_left_arrow_unavailable.png")
+    record_right_arrow_unavailable = pygame.image.load(".\\texture\\record_right_arrow_unavailable.png")
     record_left_arrow = pygame.image.load(".\\texture\\record_left_arrow.png")
-    record_right_arrow = pygame.image.load(
-        ".\\texture\\record_right_arrow.png")
+    record_right_arrow = pygame.image.load(".\\texture\\record_right_arrow.png")
     timer = pygame.image.load(".\\texture\\timer.png")
     moves = pygame.image.load(".\\texture\\moves.png")
     result_timer = pygame.image.load(".\\texture\\result_timer.png")
@@ -114,25 +103,19 @@ class Texture:
     result_box_day = pygame.image.load(".\\texture\\result_box_day.png")
     result_box_night = pygame.image.load(".\\texture\\result_box_night.png")
     select_bar_day = pygame.image.load(".\\texture\\select_bar_day.png")
-    select_bar_night = select_bar_locked_day = pygame.image.load(
-        ".\\texture\\select_bar_night.png")
-    select_bar_locked_night = pygame.image.load(
-        ".\\texture\\select_bar_locked_night.png")
-    select_bar_ingame_day = pygame.image.load(
-        ".\\texture\\select_bar_ingame_day.png")
+    select_bar_night = select_bar_locked_day = pygame.image.load(".\\texture\\select_bar_night.png")
+    select_bar_locked_night = pygame.image.load(".\\texture\\select_bar_locked_night.png")
+    select_bar_ingame_day = pygame.image.load(".\\texture\\select_bar_ingame_day.png")
     select_bar_ingame_night = select_bar_ingame_locked_day = pygame.image.load(
-        ".\\texture\\select_bar_ingame_night.png")
-    select_bar_ingame_locked_night = pygame.image.load(
-        ".\\texture\\select_bar_ingame_locked_night.png")
+        ".\\texture\\select_bar_ingame_night.png"
+    )
+    select_bar_ingame_locked_night = pygame.image.load(".\\texture\\select_bar_ingame_locked_night.png")
     record_bar_day = pygame.image.load(".\\texture\\record_bar_day.png")
     record_bar_night = pygame.image.load(".\\texture\\record_bar_night.png")
     dialog_button_day = pygame.image.load(".\\texture\\dialog_button_day.png")
-    dialog_button_night = pygame.image.load(
-        ".\\texture\\dialog_button_night.png")
-    ingame_option_box_day = pygame.image.load(
-        ".\\texture\\ingame_option_box_day.png")
-    ingame_option_box_night = pygame.image.load(
-        ".\\texture\\ingame_option_box_night.png")
+    dialog_button_night = pygame.image.load(".\\texture\\dialog_button_night.png")
+    ingame_option_box_day = pygame.image.load(".\\texture\\ingame_option_box_day.png")
+    ingame_option_box_night = pygame.image.load(".\\texture\\ingame_option_box_night.png")
 
     @classmethod
     def night_mode(cls, is_night: bool):
@@ -263,7 +246,6 @@ class Number:
             cls.guessed = cls.guessed_day
             cls.repeated = cls.repeated_day
 
-
 class Sound:
     enter = pygame.mixer.Sound(".\\sound\\enter.mp3")
     back = pygame.mixer.Sound(".\\sound\\back.mp3")
@@ -363,7 +345,6 @@ class Objects:
         return self.__scale_of_object(
             Screen.size, pos, self.surface.get_size(), self.pos or self.scale or self.shift
         )
-
 
 class Control:
     '''
@@ -509,7 +490,6 @@ class Control:
                 return (i, j)
         return None
 
-
 class Settings:
     bgm_start_play = 0
 
@@ -582,7 +562,6 @@ class Settings:
         }
         with open(".\\settings.json", "w") as setting_file:
             json.dump(settings, setting_file, indent=4)
-
 
 class Snow:
     OFF = 0
