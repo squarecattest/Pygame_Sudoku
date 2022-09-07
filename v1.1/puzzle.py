@@ -587,9 +587,12 @@ class PuzzlePage:
                 self.bar_Hint_locked,
                 self.bar_Clear_locked,
                 self.bar_Solve_locked,
-                self.bar_Result,
-                self.bar_text_Result
             )
+            if not self.solved_by_bot:
+                Objects.multi_display(
+                    self.bar_Result,
+                    self.bar_text_Result
+                )
         Objects.multi_display(
             self.bar_Back,
             self.bar_text_Mode,
@@ -732,7 +735,7 @@ class PuzzlePage:
             return "ingame"
         
         else:
-            if control.click_in(self.bar_Result):
+            if not self.solved_by_bot and control.click_in(self.bar_Result):
                 self.show_result = True
                 Sound.play(Sound.enter)
                 return "ingame"
