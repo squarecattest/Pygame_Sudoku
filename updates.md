@@ -33,6 +33,4 @@ Lots of trash thrown into module ```objects```. Just thought that every other mo
 
  - Module ```objects``` now also handles ```Color``` (for night mode), ```Settings``` (moved from ```options```), ```Controls``` (added, for more readable code while keeping efficiency). ```Background``` is merged into ```Image```. Add class ```Snow```, controlling movement of snow.
 
- - Add class ```Snow``` 
-
  - Add module ```formats``` to store all the formatting functions (cuz they're so damn long).
