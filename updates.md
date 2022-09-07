@@ -25,6 +25,8 @@ Difficulty change: "Normal" and "Hard" mode now have more blanks.(40-44, 45-49 -
 ### Code
 Lots of trash thrown into module ```objects```. Just thought that every other modules import it so it is easier to call those classes, but it becomes too messy@@
 
+ - Add module ```ingame_options``` for ingame option page.
+
  - New aligns: ```default```, ```abs```(originally ```center```), ```scale```(will be placed at the scale of screen) and ```rel```(shift from some place of screen).
 
  - Replace class ```Interactable``` with ```Objects```, adding functions to show on screen and act on the input.
