@@ -3,7 +3,6 @@ import align
 import json
 from formats import settings_format
 from random import random, randrange
-
 pygame.init()
 
 
@@ -64,7 +63,8 @@ class Color:
 
 
 class Font:
-    title = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 64)
+    title = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 84)
+    ingame_option_title = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 64)
     bar = pygame.font.Font(".\\font\\Minecraftia-Regular.ttf", 16)
     subtitle = number = pygame.font.Font(
         ".\\font\\Minecraftia-Regular.ttf", 24)
@@ -592,7 +592,6 @@ class Snow:
     on_screen_num = 40
     vel_small = (-1, 2)
     vel_large = (-2, 4)
-
     snows_small = []  # list[[Surface, pos(list), vel(tuple)]]
     snows_large = []
 

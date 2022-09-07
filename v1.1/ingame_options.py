@@ -6,7 +6,7 @@ class IngameOptionPage:
     mask.set_alpha(220)
     mask = Objects(mask, "default", (0, 0))
     option_box = Objects(Texture.ingame_option_box, "scale", (1.25, 0.5))
-    title = Objects(Font.title.render("Options", False,
+    title = Objects(Font.ingame_option_title.render("Options", False,
                     Color.title), "scale", (1.25, 1/6))
     setting_BGM_slide_bar = Objects(Texture.slide_bar, "scale", (1.25, 7/15))
     setting_SE_slide_bar = Objects(Texture.slide_bar, "scale", (1.25, 9/15))
@@ -81,7 +81,7 @@ class IngameOptionPage:
 
     def reload(self):
         self.option_box.surface = Texture.ingame_option_box
-        self.title.surface = Font.title.render("Options", False, Color.title)
+        self.title.surface = Font.ingame_option_title.render("Options", False, Color.title)
         self.setting_night_mode_bar.surface = Texture.select_bar
         self.setting_snow_bar.surface = [
             Texture.select_bar_locked, Texture.select_bar][Settings.night_mode]
