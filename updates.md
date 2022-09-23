@@ -1,5 +1,5 @@
 ## v2.0
-Brand new multiplayer mode!
+Upcoming multiplayer mode!
 ### Game
 #### Main
  - Add new music type, and music type is now selectable in options.h
