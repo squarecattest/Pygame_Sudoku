@@ -1,3 +1,12 @@
+## v2.0
+Brand new multiplayer mode!
+### Game
+#### Main
+ - Add new music type, and music type is now selectable in options.h
+#### Other
+#### Bug fix
+ - Change snow type in ingame-options will now synchronously change the text in homepage-options.
+
 ## v1.1
 ### Game
 #### Main
