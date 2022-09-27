@@ -2,10 +2,11 @@
 Upcoming multiplayer mode!
 ### Game
 #### Main
- - Add new music type, and music type is now selectable in options.h
+ - Add new music type, and music type is now selectable in options.
 #### Other
 #### Bug fix
  - Change snow type in ingame-options will now synchronously change the text in homepage-options.
+ - After finish the puzzle, the bars text will change to locked type.
 
 ## v1.1
 ### Game
