@@ -8,7 +8,7 @@ Upcoming multiplayer mode!
  - Change snow type in ingame-options will now synchronously change the text in homepage-options.
  - After finish the puzzle, the bars text will change to locked type.
 ### Code
- - Add exception traceback record (record in .\crash_traceback.txt).
+ - Add exception traceback record (record in crash_traceback.txt).
 
 ## v1.1
 ### Game
